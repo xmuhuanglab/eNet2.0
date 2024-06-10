@@ -5,6 +5,7 @@ docker pull hlinhlin/enet2.0:latest
 docker run -it hlinhlin/enet2.0 /bin/bash
 ```
 ## Network construction and topology analysis
+#### Check the arguments usage
 ```bash
 usage: args.R [-h] [--stage STAGE] [--metadata.file METADATA.FILE]
               [--atac.file ATAC.FILE] [--atac.raw ATAC.RAW]
@@ -40,6 +41,7 @@ optional arguments:
   --gdir GDIR           The path to store the genome file.
   --inputdir INPUTDIR   The path to store the genome file.
 ```
+#### Perform network topology analysis
 ```r
 ### Set working directory
 cd /home/rstudio/kitematic/R/Topology/
