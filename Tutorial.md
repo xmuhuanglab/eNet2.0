@@ -4,7 +4,7 @@
 docker pull hlinhlin/enet2.0:latest
 docker run -it hlinhlin/enet2.0 /bin/bash
 ```
-## Network construction and topology analysis
+## Part I: Network construction and topology analysis
 ```r
 ### Set working directory
 cd /home/rstudio/kitematic/R/Topology/
@@ -59,7 +59,7 @@ ls ./test1/out/
 # 0.cre.mat.RDS             0.rna.mat.RDS             2.GenePeakcorr.Rdata  2.GPPair.Rdata           3.NetworkList.Rdata  4.ModEnhInfo.Rdata
 ```
 
-## Network comparison analysis
+## Part II: Network comparison analysis
 ```r
 ### Set working directory
 cd /home/rstudio/kitematic/R/Comparison/
@@ -122,7 +122,7 @@ ls ./test2/out/
 # 0.rna.mat.Normalized.RDS  1.healthy.conns.Rdata  2.GPPair.Rdata           3.healthy.NetworkInfo.Rdata
 ```
 
-## Network dynamics analysis
+## Part III: Network dynamics analysis
 ```r
 ### Set working directory
 cd /home/rstudio/kitematic/R/Dynamics/
