@@ -9,5 +9,5 @@ eNet 2.0 is a comprehensive tool for enhancer network analysis using scATAC-seq 
 
 
 
-## The tutorial of eNet 2.0 can be found in [Tutorial.md](eNet2.0/Tutorial.md)
+## The tutorial of eNet 2.0 can be found in [Tutorial.md](Tutorial.md)
 
