@@ -49,8 +49,8 @@ optional arguments:
   --nCores NCORES       The number of cores.
   --task TASK           The task number.
   --dir DIR             Initial working path.
-  --gdir GDIR           The path to store the genome file.
-  --inputdir INPUTDIR   The path to store the genome file.
+  --gdir GDIR           The path storing the genome files.
+  --inputdir INPUTDIR   The path storing the input files.
 ```
 #### Check output
 ```shell
@@ -110,8 +110,8 @@ optional arguments:
   --nCores NCORES       The number of cores.
   --task TASK           The task number.
   --dir DIR             Initial working path.
-  --gdir GDIR           The path to store the genome file.
-  --inputdir INPUTDIR   The path to store the genome file.
+  --gdir GDIR           The path storing the genome files.
+  --inputdir INPUTDIR   The path storing the input files.
 ```
 
 #### Check output
@@ -173,8 +173,8 @@ optional arguments:
   --nCores NCORES       The number of cores.
   --task TASK           The task number.
   --dir DIR             Initial working path.
-  --gdir GDIR           The path to store the genome file.
-  --inputdir INPUTDIR   The path to store the genome file.
+  --gdir GDIR           The path storing the genome files.
+  --inputdir INPUTDIR   The path storing the input files.
 ```
 
 #### Check output
