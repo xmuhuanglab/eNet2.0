@@ -5,8 +5,6 @@ docker pull hlinhlin/enet2.0:latest
 docker run -it hlinhlin/enet2.0 /bin/bash
 ```
 ## Network construction and topology analysis
-
-#### Perform network topology analysis
 ```r
 ### Set working directory
 cd /home/rstudio/kitematic/R/Topology/
@@ -22,6 +20,37 @@ Rscript Step2_Node.R --task='test1'
 Rscript Step3_Network.R --task='test1' 
 ### Step4: Identify hub enhancers
 Rscript Step4_Module.R --task='test1'
+```
+#### Check the arguments usage
+```bash
+usage: args.R [-h] [--atac.file ATAC.FILE] [--atac.raw ATAC.RAW]
+              [--rna.exists RNA.EXISTS] [--rna.file RNA.FILE]
+              [--rna.raw RNA.RAW] [--genomeArg GENOMEARG] [--cutoff CUTOFF]
+              [--Hscore HSCORE] [--nCores NCORES] [--task TASK] [--dir DIR]
+              [--gdir GDIR] [--inputdir INPUTDIR]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --atac.file ATAC.FILE
+                        The file name of scATAC-seq matrix
+  --atac.raw ATAC.RAW   Is the scATAC-seq matrix raw count?
+  --rna.exists RNA.EXISTS
+                        Does the scRNA-seq matrix exist?
+  --rna.file RNA.FILE   The file name of scRNA-seq matrix
+  --rna.raw RNA.RAW     Is the scATAC-seq matrix raw count?
+  --genomeArg GENOMEARG
+                        The reference genome used. It can only be hg19/hg38
+                        for human, and mm9/mm10 for mouse.
+  --cutoff CUTOFF       The co-accessibilty threshould value in the format of
+                        quantile, which will be used to determine
+                        significantly co-accessibile enhancer pairs.
+  --Hscore HSCORE       The Hub score threshould value in the format of
+                        quantile, which will be used to define hub enhancers.
+  --nCores NCORES       The number of cores.
+  --task TASK           The task number.
+  --dir DIR             Initial working path.
+  --gdir GDIR           The path to store the genome file.
+  --inputdir INPUTDIR   The path to store the genome file.
 ```
 #### Check output
 ```shell
@@ -47,6 +76,44 @@ Rscript  Step3_Network.R --task='test2'
 ### Step4: Identify differential enhancer networks 
 Rscript  Step4_DiffMod.R --task='test2'
 ```
+
+#### Check the arguments usage
+```bash
+usage: args.R [-h] [--stage STAGE] [--metadata.file METADATA.FILE]
+              [--atac.file ATAC.FILE] [--atac.raw ATAC.RAW]
+              [--rna.exists RNA.EXISTS] [--rna.file RNA.FILE]
+              [--rna.raw RNA.RAW] [--genomeArg GENOMEARG] [--cutoff CUTOFF]
+              [--Hscore HSCORE] [--nCores NCORES] [--task TASK] [--dir DIR]
+              [--gdir GDIR] [--inputdir INPUTDIR]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --stage STAGE         Two names of cell stages for comparison, separated by
+                        ' '
+  --metadata.file METADATA.FILE
+                        The metadata of cell names and stages
+  --atac.file ATAC.FILE
+                        The file name of scATAC-seq matrix
+  --atac.raw ATAC.RAW   Is the scATAC-seq matrix raw count?
+  --rna.exists RNA.EXISTS
+                        Does the scRNA-seq matrix exist?
+  --rna.file RNA.FILE   The file name of scRNA-seq matrix
+  --rna.raw RNA.RAW     Is the scRNA-seq matrix raw count?
+  --genomeArg GENOMEARG
+                        The reference genome used. It can only be hg19/hg38
+                        for human, and mm9/mm10 for mouse.
+  --cutoff CUTOFF       The co-accessibilty threshould value in the format of
+                        quantile, which will be used to determine
+                        significantly co-accessibile enhancer pairs.
+  --Hscore HSCORE       The Hub score threshould value in the format of
+                        quantile, which will be used to define hub enhancers.
+  --nCores NCORES       The number of cores.
+  --task TASK           The task number.
+  --dir DIR             Initial working path.
+  --gdir GDIR           The path to store the genome file.
+  --inputdir INPUTDIR   The path to store the genome file.
+```
+
 #### Check output
 ```shell
 ls ./test2/out/
