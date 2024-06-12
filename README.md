@@ -5,7 +5,7 @@ eNet 2.0 is a comprehensive tool for enhancer network analysis using scATAC-seq 
 3) network comparison analysis
 4) network dynamics analysis
 
-![image](https://github.com/Abigail1l1l1l/eNet-2.0/assets/63504517/69587234-bf0e-44cb-8af7-a9f5666314bd)
+![image](https://github.com/xmuhuanglab/eNet2.0/blob/main/images/eNet2.0.PNG)
 
 
 
