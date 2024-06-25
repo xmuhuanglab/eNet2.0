@@ -151,7 +151,7 @@ usage: args.R [-h] [--stage STAGE] [--metadata.file METADATA.FILE]
 
 optional arguments:
   -h, --help            show this help message and exit
-  --stage STAGE         Two names of cell stages for comparison, separated by
+  --stage STAGE         Several names of cell stages for dynamics analysis, separated by
                         ' '
   --metadata.file METADATA.FILE
                         The metadata of cell names and stages
